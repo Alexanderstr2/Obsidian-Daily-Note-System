@@ -8,8 +8,19 @@ tags:: [[+Daily Notes]]
 << [[<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').subtract(1, 'd').format('YYYY-MM-DD-dddd') %>|Yesterday]] | [[<% fileDate = moment(tp.file.title, 'YYYY-MM-DD-dddd').add(1, 'd').format('YYYY-MM-DD-dddd') %>|Tomorrow]] >>
 
 ---
-### 📅 Daily Questions
-##### 🌜 Last night, after work, I...
+### 📅 Daily Questions / Reflection
+
+#### Rate the following (1/10)
+**Mood**:: 
+**Stress Level**:: 
+**Creative Output and Ideation**:: 
+**Health**:: 
+**Explain**:: 
+
+##### ❤️ One thing I am grateful for:
+- 
+
+##### 🌜 Last night, after school, I...
 - 
 
 ##### 🙌 One thing I've excited about right now is...
@@ -22,7 +33,7 @@ tags:: [[+Daily Notes]]
 - 
 
 ---
-# 📝 Notes
+# 📝  Notes / Rambles / Ideas
 - <% tp.file.cursor() %>
 
 
@@ -39,6 +50,13 @@ tags:: [[+Daily Notes]]
 **Comments**:: 
 
 ---
+# 📆 Calendar / What I did Today (Screenshot for now) 
+
+
+
+**What I did**
+- 
+---
 ### Notes created today
 ```dataview
 List FROM "" WHERE file.cday = date("<%tp.date.now("YYYY-MM-DD")%>") SORT file.ctime asc
@@ -48,3 +66,9 @@ List FROM "" WHERE file.cday = date("<%tp.date.now("YYYY-MM-DD")%>") SORT file.c
 ```dataview
 List FROM "" WHERE file.mday = date("<%tp.date.now("YYYY-MM-DD")%>") SORT file.mtime asc
 ```
+
+### Clippings From Today
+```dataview
+List FROM "Clippings" WHERE file.mday = date("<%tp.date.now("YYYY-MM-DD")%>") SORT file.mtime asc
+```
+
